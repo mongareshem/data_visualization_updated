@@ -15,8 +15,12 @@ ax.set_ylabel('Square of Value', fontsize=16)
 
 ax.tick_params(labelsize=14)
 
+# Set x and y limits
 ax.set_xlim(0, 1100)
 ax.set_ylim(0, 1_100_000)
 # ax.axis([0, 1000, 0, 1_100_000]) #type: ignore
+
+# Customize tick labels
+ax.ticklabel_format(style='plain')
 
 plt.show()
