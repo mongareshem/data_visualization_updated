@@ -6,8 +6,9 @@ y_values = [x**2 for x in x_values]
 plt.style.use('seaborn-v0_8-darkgrid')
 
 fig, ax = plt.subplots()
-#ax.scatter(2, 4, s=200)
-ax.scatter(x_values, y_values, s=5)
+
+# ax.scatter(x_values, y_values, color='turquoise', s=5)
+ax.scatter(x_values, y_values, color=(0.8, 0, 0), s=10)
 
 ax.set_title('Squares', fontsize=30, fontweight='bold')
 ax.set_xlabel('Value', fontsize=16)
