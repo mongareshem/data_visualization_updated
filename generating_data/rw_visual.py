@@ -11,7 +11,8 @@ while True:
     plt.style.use('classic')
     fig, ax = plt.subplots()
 
-    ax.scatter(rw.x_values, rw.y_values, s=10)
+    point_numbers = range(rw.num_points)
+    ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none', s=10)
     ax.set_aspect('equal')
 
     plt.show()
