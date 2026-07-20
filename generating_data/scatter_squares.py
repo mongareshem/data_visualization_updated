@@ -25,4 +25,4 @@ ax.set_ylim(0, 1_100_000)
 # Customize tick labels
 ax.ticklabel_format(style='plain')
 
-plt.show()
+plt.savefig('square_plot.png', bbox_inches='tight')
