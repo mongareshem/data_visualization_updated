@@ -1,5 +1,8 @@
 from random import choice
 
+from generating_data.scatter_squares import x_values
+
+
 class RandomWalk:
     """A class to generate random walks"""
 
@@ -14,7 +17,7 @@ class RandomWalk:
     def get_step(self):
         """Determines the direction and distance for each step"""
         direction = choice([1, -1])
-        distance = choice([0, 1, 2, 3, 4, 5, 6, 7, 8])
+        distance = choice([0, 1, 2, 3, 4, 5])
         return direction * distance
 
     def fill_walk(self):
