@@ -14,4 +14,5 @@ title = 'Result of rolling a D6 and a D10 50,000 times'
 labels = {'x': 'Result', 'y': 'Frequency of the Result'}
 fig = px.bar(x=poss_results, y=frequencies, title=title, labels=labels)
 fig.update_layout(title={'x':0.5}, xaxis_dtick=1)
-fig.show()
+# fig.show()
+fig.write_html('d6_d10_visual.html')
