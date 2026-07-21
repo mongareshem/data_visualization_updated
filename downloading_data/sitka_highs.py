@@ -14,12 +14,14 @@ for index, column_header in enumerate(header_row):
     print(index, column_header)
 
 # Extract dates and high temperatures.
-dates, highs = [], []
+dates, highs, lows = [], [], []
 for row in reader:
     current_date = datetime.strptime(row[2], '%Y-%m-%d')
     high = int(row[4])
+    low = int(row[5])
     dates.append(current_date)
     highs.append(high)
+    lows.append(low)
 
 print(highs)
 
@@ -27,9 +29,10 @@ print(highs)
 plt.style.use('seaborn-v0_8-darkgrid')
 fig, ax = plt.subplots()
 ax.plot(dates, highs, color='red')
+ax.plot(dates, lows, color='blue')
 
 # Format the plot.
-ax.set_title('Daily High Temperatures, 2021', fontsize=24)
+ax.set_title('Daily High and Low Temperatures, 2021', fontsize=22)
 ax.set_xlabel('', fontsize=11)
 fig.autofmt_xdate() # fig. not ax.
 ax.set_ylabel('Temperature (F)', fontsize=11)
