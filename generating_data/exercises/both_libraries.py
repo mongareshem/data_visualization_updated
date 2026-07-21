@@ -14,4 +14,8 @@ frequencies = [results.count(value) for value in poss_results]
 fig, ax = plt.subplots()
 ax.scatter(poss_results, frequencies)
 
+ax.set_title('Plot of the results of rolling dice using pyplot')
+ax.set_xlabel('Value')
+ax.set_ylabel('Frequency of the value')
+
 plt.show()
