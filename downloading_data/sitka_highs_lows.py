@@ -28,8 +28,9 @@ print(highs)
 # Plot the high and low temperatures.
 plt.style.use('seaborn-v0_8-darkgrid')
 fig, ax = plt.subplots()
-ax.plot(dates, highs, color='red')
-ax.plot(dates, lows, color='blue')
+ax.plot(dates, highs, color='red', alpha=0.7)
+ax.plot(dates, lows, color='blue', alpha=0.7)
+ax.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 
 # Format the plot.
 ax.set_title('Daily High and Low Temperatures, 2021', fontsize=20)
