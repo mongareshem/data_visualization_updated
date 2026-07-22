@@ -39,4 +39,6 @@ ax.set_ylabel('Temperatures(F)', fontsize=11)
 fig.autofmt_xdate()
 ax.tick_params(labelsize=11)
 
+ax.set_ylim(0, 130) # same as sitka, for comparison
+
 plt.show()

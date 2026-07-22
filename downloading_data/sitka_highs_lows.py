@@ -39,4 +39,6 @@ fig.autofmt_xdate() # fig. not ax.
 ax.set_ylabel('Temperature (F)', fontsize=11)
 ax.tick_params(labelsize=11)
 
+ax.set_ylim(0, 130) # Same as death valley, for comparison
+
 plt.show()
