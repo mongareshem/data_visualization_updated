@@ -1,6 +1,8 @@
 from pathlib import Path
 import json
 
+import plotly.express as px
+
 # Read data as a string and convert it to a Python object
 path = Path('eq_data/eq_data_1_day_m1.geojson')
 contents = path.read_text(encoding='utf-8')
@@ -16,13 +18,17 @@ all_eq_dicts = all_eq_data['features']
 print(len(all_eq_dicts))
 
 # Extracting magnitudes and location
-mags, longs, lats = [], [], []
+mags, lons, lats = [], [], []
 for eq_dict in all_eq_dicts:
     mag = eq_dict['properties']['mag']
     mags.append(mag)
-    longs.append(eq_dict['geometry']['coordinates'][0])
+    lons.append(eq_dict['geometry']['coordinates'][0])
     lats.append(eq_dict['geometry']['coordinates'][1])
 
 print(mags[:10])
-print(longs[:5])
+print(lons[:5])
 print(lats[:5])
+
+title = 'Global Earthquakes'
+fig = px.scatter_geo(lon=lons, lat=lats, title=title)
+fig.show()
