@@ -13,16 +13,26 @@ header_row = next(reader)
 for index, column_header in enumerate(header_row):
     print(index, column_header)
 
-precipitations, dates = [], []
+precipitations, dates, places = [], [], []
 for row in reader:
     precipitations.append(float(row[5]))
     dates.append(datetime.strptime(row[2], '%Y-%m-%d'))
+    places.append(row[1])
 
 print(precipitations[:5])
+print(places[0])
+
 
 plt.style.use('seaborn-v0_8-darkgrid')
 fig, ax = plt.subplots()
 ax.plot(dates, precipitations)
 
-plt.tight_layout()
+ax.set_title(f'DAILY RAINFALL IN {places[0]}',
+             fontdict={'family':'serif', 'fontsize':17, 'fontweight':'bold'})
+ax.set_xlabel('Dates', fontsize=14)
+ax.set_ylabel('Precipitation', fontsize=14)
+ax.tick_params(labelsize=14)
+fig.autofmt_xdate()
+
+plt.tight_layout() # Adjusts space automatically
 plt.show()
