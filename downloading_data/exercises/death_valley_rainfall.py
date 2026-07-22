@@ -4,7 +4,7 @@ from datetime import datetime
 
 import matplotlib.pyplot as plt
 
-path = Path('../weather_data/sitka_weather_2021_full.csv')
+path = Path('../weather_data/death_valley_2021_full.csv')
 lines = path.read_text().splitlines()
 
 reader = csv.reader(lines)
@@ -15,7 +15,7 @@ for index, column_header in enumerate(header_row):
 
 precipitations, dates, places = [], [], []
 for row in reader:
-    precipitations.append(float(row[5]))
+    precipitations.append(float(row[3]))
     dates.append(datetime.strptime(row[2], '%Y-%m-%d'))
     places.append(row[1])
 
@@ -25,9 +25,9 @@ print(places[0])
 
 plt.style.use('seaborn-v0_8-darkgrid')
 fig, ax = plt.subplots()
-ax.plot(dates, precipitations, color='blue', alpha=0.7)
+ax.plot(dates, precipitations, color='chocolate', alpha=0.7)
 
-ax.set_title(f'DAILY RAINFALL IN \n{places[0]}',
+ax.set_title(f'DAILY RAINFALL IN \n {places[0]}',
              fontdict={'family':'serif', 'fontsize':17, 'fontweight':'bold'})
 ax.set_xlabel('Dates', fontsize=14)
 ax.set_ylabel('Precipitation', fontsize=16)
