@@ -30,5 +30,10 @@ print(lons[:5])
 print(lats[:5])
 
 title = 'Global Earthquakes'
-fig = px.scatter_geo(lon=lons, lat=lats, size=mags ,title=title)
+fig = px.scatter_geo(lon=lons, lat=lats, size=mags ,title=title,
+                     color=mags,
+                     color_continuous_scale='viridis',
+                     labels={'color': 'magnitude'},
+                     projection='natural earth',
+                     )
 fig.show()
