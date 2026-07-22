@@ -25,13 +25,13 @@ print(places[0])
 
 plt.style.use('seaborn-v0_8-darkgrid')
 fig, ax = plt.subplots()
-ax.plot(dates, precipitations)
+ax.plot(dates, precipitations, color='blue', alpha=0.7)
 
 ax.set_title(f'DAILY RAINFALL IN {places[0]}',
              fontdict={'family':'serif', 'fontsize':17, 'fontweight':'bold'})
 ax.set_xlabel('Dates', fontsize=14)
-ax.set_ylabel('Precipitation', fontsize=14)
-ax.tick_params(labelsize=14)
+ax.set_ylabel('Precipitation', fontsize=16)
+ax.tick_params(labelsize=10)
 fig.autofmt_xdate()
 
 plt.tight_layout() # Adjusts space automatically
