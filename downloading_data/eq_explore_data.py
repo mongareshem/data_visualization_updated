@@ -15,10 +15,14 @@ path.write_text(readable_contents)
 all_eq_dicts = all_eq_data['features']
 print(len(all_eq_dicts))
 
-# Extracting magnitudes
-mags = []
+# Extracting magnitudes and location
+mags, longs, lats = [], [], []
 for eq_dict in all_eq_dicts:
     mag = eq_dict['properties']['mag']
     mags.append(mag)
+    longs.append(eq_dict['geometry']['coordinates'][0])
+    lats.append(eq_dict['geometry']['coordinates'][1])
 
 print(mags[:10])
+print(longs[:5])
+print(lats[:5])
