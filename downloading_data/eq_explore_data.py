@@ -18,12 +18,13 @@ all_eq_dicts = all_eq_data['features']
 print(len(all_eq_dicts))
 
 # Extracting magnitudes and location
-mags, lons, lats = [], [], []
+mags, lons, lats, eq_titles = [], [], [], []
 for eq_dict in all_eq_dicts:
     mag = eq_dict['properties']['mag']
     mags.append(mag)
     lons.append(eq_dict['geometry']['coordinates'][0])
     lats.append(eq_dict['geometry']['coordinates'][1])
+    eq_titles.append(eq_dict['properties']['title'])
 
 print(mags[:10])
 print(lons[:5])
@@ -35,5 +36,6 @@ fig = px.scatter_geo(lon=lons, lat=lats, size=mags ,title=title,
                      color_continuous_scale='viridis',
                      labels={'color': 'magnitude'},
                      projection='natural earth',
+                     hover_name=eq_titles,
                      )
 fig.show()
