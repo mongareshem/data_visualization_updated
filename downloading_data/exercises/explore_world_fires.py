@@ -24,7 +24,10 @@ print(brightness[:3])
 
 title = 'World Fires'
 fig = px.scatter_geo(lon=lons, lat=lats, size=brightness,
+                     color=brightness,
+                     color_continuous_scale='icefire',
                      title=title,
+                     labels={'size':'brightness'},
                      projection='natural earth')
 
 fig.update_layout(title={'text':title,
