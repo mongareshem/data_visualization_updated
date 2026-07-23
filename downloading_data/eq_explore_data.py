@@ -20,8 +20,7 @@ print(len(all_eq_dicts))
 # Extracting magnitudes and location
 mags, lons, lats, eq_titles = [], [], [], []
 for eq_dict in all_eq_dicts:
-    mag = eq_dict['properties']['mag']
-    mags.append(mag)
+    mags.append(eq_dict['properties']['mag'])
     lons.append(eq_dict['geometry']['coordinates'][0])
     lats.append(eq_dict['geometry']['coordinates'][1])
     eq_titles.append(eq_dict['properties']['title'])
@@ -30,7 +29,7 @@ print(mags[:10])
 print(lons[:5])
 print(lats[:5])
 
-title = 'Global Earthquakes'
+title = all_eq_data['metadata']['title']
 fig = px.scatter_geo(lon=lons, lat=lats, size=mags ,title=title,
                      color=mags,
                      color_continuous_scale='viridis',
@@ -38,4 +37,7 @@ fig = px.scatter_geo(lon=lons, lat=lats, size=mags ,title=title,
                      projection='natural earth',
                      hover_name=eq_titles,
                      )
+
+fig.update_layout(title={'x':0.5, 'font':{'family':'Serif', 'size':24}})
+
 fig.show()
