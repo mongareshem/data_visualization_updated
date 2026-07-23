@@ -11,20 +11,20 @@ lines = path.read_text().splitlines()
 reader = csv.reader(lines)
 header_row = next(reader)
 
-print(header_row)
+print(header_row.index('TMAX'))
 
 for i, column_header in enumerate(header_row):
     print(i, column_header)
 
 dates, t_maxs, t_mins, place = [], [], [], ''
 for row in reader:
-    dates.append(datetime.strptime(row[5], '%Y-%m-%d'))
-    place = row[1]
+    dates.append(datetime.strptime(row[header_row.index('DATE')], '%Y-%m-%d'))
+    place = row[header_row.index('NAME')]
     try:
-        t_maxs.append(int(row[8]))
-        t_mins.append(int(row[9]))
+        t_maxs.append(int(row[header_row.index('TMAX')]))
+        t_mins.append(int(row[header_row.index('TMIN')]))
     except ValueError:
-        print(f'Missing data for {row[5]}')
+        print(f'Missing data for {row[header_row.index('DATE')]}')
         t_maxs.append(round(average(t_maxs)))
         t_mins.append(round(average(t_mins)))
 
