@@ -1,6 +1,7 @@
 from pathlib import Path
 import json
 
+import pandas as pd
 import plotly.express as px
 
 path = Path('../eq_data/past_month_eq_data.geojson')
@@ -25,13 +26,21 @@ print(lons[:3])
 print(lats[:3])
 print(mags[:3])
 
-fig = px.scatter_geo(lon=lons, lat=lats, size=mags,
-                     color=mags,
-                     color_continuous_scale='inferno_r', # _r at the end reverses
-                     labels={'color':'magnitude', 'lon':'longitude'},
-                     projection='natural earth',
-                     hover_name=hover_names,
+data = pd.DataFrame({
+    'longitudes':lons,
+    'latitudes': lats,
+    'magnitudes': mags,
+    'hover_text': hover_names,
+    'c': mags
+})
 
+fig = px.scatter_geo(data, lon='longitudes', lat='latitudes', size='magnitudes',
+                     color='c',
+                     color_continuous_scale='inferno_r', # _r at the end reverses
+                     labels={'c':'magnitude', 'lon':'longitude'},
+                     projection='natural earth',
+                     hover_name='hover_text',
+                    hover_data={'magnitudes':False, 'c':True}
                      )
 
 fig.update_layout(title={
