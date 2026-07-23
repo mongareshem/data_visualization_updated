@@ -1,6 +1,7 @@
 from pathlib import Path
 import csv
 
+import pandas as pd
 import plotly.express as px
 
 path = Path('../eq_data/world_fires_1_day.csv')
@@ -22,13 +23,20 @@ print(lons[:3])
 print(lats[:3])
 print(brightness[:3])
 
+data = pd.DataFrame({
+    'longitudes':lons,
+    'latitudes':lats,
+    'size':brightness,
+    'color':brightness
+})
+
 title = 'World Fires'
-fig = px.scatter_geo(lon=lons, lat=lats, size=brightness,
-                     color=brightness,
+fig = px.scatter_geo(data, lon='longitudes', lat='latitudes', size='size',
+                     color='color',
                      color_continuous_scale='icefire',
-                     title=title,
                      labels={'size':'brightness'},
-                     projection='natural earth')
+                     projection='natural earth',
+                     hover_data={'color':False})
 
 fig.update_layout(title={'text':title,
                          'x':0.5,
