@@ -15,10 +15,10 @@ for index, column_header in enumerate(header_row):
 
 dates, highs, lows = [], [], []
 for row in reader:
-    current_date = datetime.strptime(row[2], '%Y-%m-%d')
+    current_date = datetime.strptime(row[header_row.index('DATE')], '%Y-%m-%d')
     try:
-        high = int(row[3])
-        low = int(row[4])
+        high = int(row[header_row.index('TMAX')])
+        low = int(row[header_row.index('TMIN')])
     except ValueError:
         print(f'Missing data for {current_date}')
     else:
@@ -39,6 +39,6 @@ ax.set_ylabel('Temperatures(F)', fontsize=11)
 fig.autofmt_xdate()
 ax.tick_params(labelsize=11)
 
-ax.set_ylim(0, 130) # same as sitka, for comparison
+# ax.set_ylim(0, 130) # same as sitka, for comparison
 
 plt.show()

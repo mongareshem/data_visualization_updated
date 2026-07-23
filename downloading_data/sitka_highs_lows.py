@@ -16,14 +16,12 @@ for index, column_header in enumerate(header_row):
 # Extract dates and high temperatures.
 dates, highs, lows = [], [], []
 for row in reader:
-    current_date = datetime.strptime(row[2], '%Y-%m-%d')
-    high = int(row[4])
-    low = int(row[5])
+    current_date = datetime.strptime(row[header_row.index('DATE')], '%Y-%m-%d')
+    high = int(row[header_row.index('TMAX')])
+    low = int(row[header_row.index('TMIN')])
     dates.append(current_date)
     highs.append(high)
     lows.append(low)
-
-print(highs)
 
 # Plot the high and low temperatures.
 plt.style.use('seaborn-v0_8-darkgrid')
@@ -39,6 +37,6 @@ fig.autofmt_xdate() # fig. not ax.
 ax.set_ylabel('Temperature (F)', fontsize=11)
 ax.tick_params(labelsize=11)
 
-ax.set_ylim(0, 130) # Same as death valley, for comparison
+# ax.set_ylim(0, 130) # Same as death valley, for comparison
 
 plt.show()
