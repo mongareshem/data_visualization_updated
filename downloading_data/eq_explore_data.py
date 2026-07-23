@@ -38,6 +38,9 @@ fig = px.scatter_geo(lon=lons, lat=lats, size=mags ,title=title,
                      hover_name=eq_titles,
                      )
 
-fig.update_layout(title={'x':0.5, 'font':{'family':'Serif', 'size':24}})
+fig.update_layout(title={'x':0.5,
+                         'font':{
+                             'family':'Serif',
+                             'size':24}})
 
 fig.show()

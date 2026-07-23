@@ -1,0 +1,701 @@
+{
+    "type": "FeatureCollection",
+    "metadata": {
+        "generated": 1784793000000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson",
+        "title": "USGS Significant Earthquakes, Past Month",
+        "status": 200,
+        "api": "2.7.0",
+        "count": 17
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.5,
+                "place": "4 km SSW of Chupaca, Peru",
+                "time": 1784427875623,
+                "updated": 1784668036191,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1q7",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1q7.geojson",
+                "felt": 12,
+                "cdi": 6.7,
+                "mmi": 7.204,
+                "alert": "yellow",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 658,
+                "net": "us",
+                "code": "7000t1q7",
+                "ids": ",us7000t1q7,",
+                "sources": ",us,",
+                "types": ",dyfi,ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 201,
+                "dmin": 1.51,
+                "rms": 0.63,
+                "gap": 32,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 5.5 - 4 km SSW of Chupaca, Peru"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.3034,
+                    -12.1036,
+                    10
+                ]
+            },
+            "id": "us7000t1q7"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.4,
+                "place": "86 km WSW of Puerto Madero, Mexico",
+                "time": 1784301607228,
+                "updated": 1784556885501,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1cc",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1cc.geojson",
+                "felt": 2,
+                "cdi": 3.8,
+                "mmi": 4.851,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 631,
+                "net": "us",
+                "code": "7000t1cc",
+                "ids": ",us7000t1cc,",
+                "sources": ",us,",
+                "types": ",dyfi,ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 83,
+                "dmin": 3.25,
+                "rms": 1.4,
+                "gap": 109,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 6.4 - 86 km WSW of Puerto Madero, Mexico"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.1039,
+                    14.308,
+                    10
+                ]
+            },
+            "id": "us7000t1cc"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 7.3,
+                "place": "58 km WSW of Puerto Madero, Mexico",
+                "time": 1784299719769,
+                "updated": 1784473369040,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1bu",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t1bu.geojson",
+                "felt": 286,
+                "cdi": 5.4,
+                "mmi": 7.018,
+                "alert": "yellow",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 974,
+                "net": "us",
+                "code": "7000t1bu",
+                "ids": ",attibqh8,us7000t1bu,",
+                "sources": ",at,us,",
+                "types": ",dyfi,finite-fault,general-text,ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 271,
+                "dmin": 3.153,
+                "rms": 1.23,
+                "gap": 30,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 7.3 - 58 km WSW of Puerto Madero, Mexico"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -92.9517,
+                    14.6043,
+                    18.584
+                ]
+            },
+            "id": "us7000t1bu"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.2,
+                "place": "32 km WSW of Sarangani, Philippines",
+                "time": 1784044179282,
+                "updated": 1784728042824,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0d0",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t0d0.geojson",
+                "felt": 80,
+                "cdi": 5.9,
+                "mmi": 6.052,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 639,
+                "net": "us",
+                "code": "7000t0d0",
+                "ids": ",us7000t0d0,",
+                "sources": ",us,",
+                "types": ",dyfi,ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 271,
+                "dmin": 1.78,
+                "rms": 0.6,
+                "gap": 23,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 6.2 - 32 km WSW of Sarangani, Philippines"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    125.1801,
+                    5.3226,
+                    46.427
+                ]
+            },
+            "id": "us7000t0d0"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.31762677888687,
+                "place": "18 km WSW of Johannesburg, CA",
+                "time": 1783960855170,
+                "updated": 1784739060504,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci41292687",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci41292687.geojson",
+                "felt": 1090,
+                "cdi": 3.8,
+                "mmi": 4.501,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 667,
+                "net": "ci",
+                "code": "41292687",
+                "ids": ",ew1783960860,ci41292687,us7000t02g,",
+                "sources": ",ew,ci,us,",
+                "types": ",dyfi,event-sequence,focal-mechanism,losspager,moment-tensor,nearby-cities,oaf,origin,phase-data,scitech-link,shake-alert,shakemap,",
+                "nst": 81,
+                "dmin": 0.05134,
+                "rms": 0.15,
+                "gap": 22,
+                "magType": "mw",
+                "type": "earthquake",
+                "title": "M 4.3 - 18 km WSW of Johannesburg, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.814833333333,
+                    35.3121666666667,
+                    7.55
+                ]
+            },
+            "id": "ci41292687"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.3,
+                "place": "southeast of the Loyalty Islands",
+                "time": 1783953949203,
+                "updated": 1784041027243,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t01n",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000t01n.geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": 0,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 611,
+                "net": "us",
+                "code": "7000t01n",
+                "ids": ",us7000t01n,atti4boj,",
+                "sources": ",us,at,",
+                "types": ",ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 81,
+                "dmin": 3.765,
+                "rms": 0.96,
+                "gap": 71,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 6.3 - southeast of the Loyalty Islands"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    171.5199,
+                    -22.7889,
+                    10
+                ]
+            },
+            "id": "us7000t01n"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.4,
+                "place": "191 km SE of Lorengau, Papua New Guinea",
+                "time": 1783932807913,
+                "updated": 1784023255147,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szzy",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szzy.geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": 4.289,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 630,
+                "net": "us",
+                "code": "7000szzy",
+                "ids": ",us7000szzy,atti3vd8,pt26194000,",
+                "sources": ",us,at,pt,",
+                "types": ",ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 81,
+                "dmin": 1.643,
+                "rms": 0.81,
+                "gap": 48,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 6.4 - 191 km SE of Lorengau, Papua New Guinea"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    148.5218,
+                    -3.2207,
+                    10
+                ]
+            },
+            "id": "us7000szzy"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.10922888670317,
+                "place": "2 km ESE of Frazier Park, CA",
+                "time": 1783852684730,
+                "updated": 1784769187382,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci41291863",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci41291863.geojson",
+                "felt": 796,
+                "cdi": 4.8,
+                "mmi": 4.158,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 642,
+                "net": "ci",
+                "code": "41291863",
+                "ids": ",ew1783852680,ci41291863,us7000szuv,",
+                "sources": ",ew,ci,us,",
+                "types": ",dyfi,event-sequence,focal-mechanism,losspager,moment-tensor,nearby-cities,oaf,origin,phase-data,scitech-link,shake-alert,shakemap,trump-moment-tensor,",
+                "nst": 123,
+                "dmin": 0.04811,
+                "rms": 0.31,
+                "gap": 25,
+                "magType": "mw",
+                "type": "earthquake",
+                "title": "M 4.1 - 2 km ESE of Frazier Park, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.925833333333,
+                    34.8131666666667,
+                    13.09
+                ]
+            },
+            "id": "ci41291863"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.4,
+                "place": "South Sandwich Islands region",
+                "time": 1783765602691,
+                "updated": 1783852591780,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szpb",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000szpb.geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": 3.883,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 630,
+                "net": "us",
+                "code": "7000szpb",
+                "ids": ",us7000szpb,",
+                "sources": ",us,",
+                "types": ",ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 77,
+                "dmin": 4.583,
+                "rms": 0.93,
+                "gap": 57,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 6.4 - South Sandwich Islands region"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -28.8526,
+                    -55.5424,
+                    26
+                ]
+            },
+            "id": "us7000szpb"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 3.8,
+                "place": "2 km E of Oak Harbor, Washington",
+                "time": 1782974147600,
+                "updated": 1784187419578,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uw714040221",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/uw714040221.geojson",
+                "felt": 2028,
+                "cdi": 3.8,
+                "mmi": 3.322,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 602,
+                "net": "uw",
+                "code": "714040221",
+                "ids": ",uw714040221,us6000t9kz,",
+                "sources": ",uw,us,",
+                "types": ",dyfi,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 124,
+                "dmin": 0.01781,
+                "rms": 0.17,
+                "gap": 15,
+                "magType": "ml",
+                "type": "earthquake",
+                "title": "M 3.8 - 2 km E of Oak Harbor, Washington"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.6065,
+                    48.2888333333333,
+                    25.38
+                ]
+            },
+            "id": "uw714040221"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.3,
+                "place": "272 km SSE of Dunhuang, China",
+                "time": 1782863094898,
+                "updated": 1783471092040,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t9bg",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000t9bg.geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": 6.493,
+                "alert": "yellow",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 650,
+                "net": "us",
+                "code": "6000t9bg",
+                "ids": ",us6000t9bg,",
+                "sources": ",us,",
+                "types": ",ground-failure,losspager,origin,phase-data,shakemap,",
+                "nst": 94,
+                "dmin": 6.886,
+                "rms": 0.73,
+                "gap": 35,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 5.3 - 272 km SSE of Dunhuang, China"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    95.4116,
+                    37.7819,
+                    10
+                ]
+            },
+            "id": "us6000t9bg"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.2,
+                "place": "27 km WNW of Hope, Alaska",
+                "time": 1782537952321,
+                "updated": 1784638428021,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026mpitdk",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026mpitdk.geojson",
+                "felt": 983,
+                "cdi": 4.1,
+                "mmi": 3.609,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 674,
+                "net": "ak",
+                "code": "a2026mpitdk",
+                "ids": ",aka2026mpitdk,us6000t8lq,atth9z34,",
+                "sources": ",ak,us,at,",
+                "types": ",dyfi,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 208,
+                "dmin": 0.2,
+                "rms": 0.9,
+                "gap": 35,
+                "magType": "ml",
+                "type": "earthquake",
+                "title": "M 4.2 - 27 km WNW of Hope, Alaska"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -150.125,
+                    60.989,
+                    47.9
+                ]
+            },
+            "id": "aka2026mpitdk"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.5,
+                "place": "44 km SW of Balangonan, Philippines",
+                "time": 1782473681463,
+                "updated": 1784637597031,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t8ec",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000t8ec.geojson",
+                "felt": 62,
+                "cdi": 5.7,
+                "mmi": 6.665,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 685,
+                "net": "us",
+                "code": "6000t8ec",
+                "ids": ",pt26177001,us6000t8ec,atth8lhw,",
+                "sources": ",pt,us,at,",
+                "types": ",dyfi,ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 132,
+                "dmin": 1.842,
+                "rms": 0.95,
+                "gap": 22,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 6.5 - 44 km SW of Balangonan, Philippines"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    125.0719,
+                    5.2867,
+                    42
+                ]
+            },
+            "id": "us6000t8ec"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.9,
+                "place": "33 km ENE of Noda, Japan",
+                "time": 1782340212989,
+                "updated": 1783296484374,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zq",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000t7zq.geojson",
+                "felt": 95,
+                "cdi": 6.9,
+                "mmi": 6.718,
+                "alert": "yellow",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 798,
+                "net": "us",
+                "code": "6000t7zq",
+                "ids": ",pt26175002,us6000t7zq,",
+                "sources": ",pt,us,",
+                "types": ",dyfi,ground-failure,impact-text,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 123,
+                "dmin": 0.994,
+                "rms": 0.7,
+                "gap": 34,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 6.9 - 33 km ENE of Noda, Japan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.1614,
+                    40.2515,
+                    34
+                ]
+            },
+            "id": "us6000t7zq"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 7.5,
+                "place": "20 km ESE of Yumare, Venezuela",
+                "time": 1782338711743,
+                "updated": 1784765931332,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000t7zp.geojson",
+                "felt": 780,
+                "cdi": 8.9,
+                "mmi": 8.69,
+                "alert": "red",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 2694,
+                "net": "us",
+                "code": "6000t7zp",
+                "ids": ",us6000t7zp,",
+                "sources": ",us,",
+                "types": ",dyfi,event-sequence,finite-fault,general-header,general-text,ground-failure,impact-text,losspager,moment-tensor,oaf,origin,phase-data,shakemap,",
+                "nst": 121,
+                "dmin": 9.648,
+                "rms": 0.75,
+                "gap": 50,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 7.5 - 20 km ESE of Yumare, Venezuela"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -68.5036,
+                    10.5086,
+                    10
+                ]
+            },
+            "id": "us6000t7zp"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 7.2,
+                "place": "21 km ENE of San Felipe, Venezuela",
+                "time": 1782338674363,
+                "updated": 1783984686610,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zc",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000t7zc.geojson",
+                "felt": null,
+                "cdi": null,
+                "mmi": 8.566,
+                "alert": "red",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 2000,
+                "net": "us",
+                "code": "6000t7zc",
+                "ids": ",atth5pbk,us6000t7zc,",
+                "sources": ",at,us,",
+                "types": ",general-header,general-text,ground-failure,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": 115,
+                "dmin": 2.547,
+                "rms": 0.61,
+                "gap": 21,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 7.2 - 21 km ENE of San Felipe, Venezuela"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -68.5571,
+                    10.4085,
+                    27.588
+                ]
+            },
+            "id": "us6000t7zc"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.59,
+                "place": "11 km N of Redwood Valley, CA",
+                "time": 1782313840760,
+                "updated": 1784733655862,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75382936",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc75382936.geojson",
+                "felt": 5306,
+                "cdi": 6.8,
+                "mmi": 7.376,
+                "alert": "yellow",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 1330,
+                "net": "nc",
+                "code": "75382936",
+                "ids": ",nc75382936,us6000t7uu,atth565s,ew1782313840,",
+                "sources": ",nc,us,at,ew,",
+                "types": ",dyfi,event-sequence,focal-mechanism,general-text,ground-failure,impact-text,losspager,moment-tensor,nearby-cities,oaf,origin,phase-data,scitech-link,shake-alert,shakemap,",
+                "nst": 87,
+                "dmin": 0.06242,
+                "rms": 0.12,
+                "gap": 42,
+                "magType": "mw",
+                "type": "earthquake",
+                "title": "M 5.6 - 11 km N of Redwood Valley, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.228833333333,
+                    39.3623333333333,
+                    8.85
+                ]
+            },
+            "id": "nc75382936"
+        }
+    ],
+    "bbox": [
+        -150.125,
+        -55.5424,
+        7.55,
+        171.5199,
+        60.989,
+        47.9
+    ]
+}
