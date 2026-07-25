@@ -18,3 +18,5 @@ for i, v in enumerate(geometry):
     print(i, v)
 
 print(geometry['coordinates'])
+
+ids = {'students':[1,2,3,4,5]}
