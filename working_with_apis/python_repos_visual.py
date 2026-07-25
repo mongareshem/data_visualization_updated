@@ -44,7 +44,7 @@ fig = px.bar(x=repo_links, y=stars, title=title,
 fig.update_layout(title_font_size=28, xaxis_title_font_size=20,
                   yaxis_title_font_size=20)
 
-fig.update_traces(marker_color='red', marker_opacity=0.85)
+fig.update_traces(marker_color='red', marker_opacity=0.85) # Markers are just bars
 
 fig.show()
 
