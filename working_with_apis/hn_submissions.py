@@ -28,4 +28,6 @@ for submission_id in submission_ids[:2]:
     }
     submission_dicts.append(submission_dict)
 
-print(submission_dicts)
+# print(submission_dicts)
+submission_dicts = sorted(submission_dicts, key=itemgetter('comments'),
+                          reverse=True)
