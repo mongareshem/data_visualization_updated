@@ -2,6 +2,8 @@ from operator import itemgetter
 
 import requests
 
+import plotly.express as px
+
 # Make an API call and check the response
 url =  "https://hacker-news.firebaseio.com/v0/topstories.json"
 r = requests.get(url)
@@ -12,7 +14,7 @@ submission_ids = r.json() # Returns a list
 # print(submission_ids)
 
 submission_dicts = []
-for submission_id in submission_ids[:2]:
+for submission_id in submission_ids[:5]:
     # Make a new API call for each submission
     url = f'https://hacker-news.firebaseio.com/v0/item/{submission_id}.json'
     r = requests.get(url)
@@ -36,3 +38,12 @@ for submission_dict in submission_dicts:
     print(f'\nTitle: {submission_dict['title']}')
     print(f'Discussion Link: {submission_dict['hn_link']}')
     print(f'Comments: {submission_dict['comments']}')
+
+comments = []
+for submission_dict in submission_dicts:
+    comments.append(int(submission_dict['comments']))
+
+print(comments)
+
+fig = px.bar(comments)
+fig.show()
