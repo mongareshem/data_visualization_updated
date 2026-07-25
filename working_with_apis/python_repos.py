@@ -1,7 +1,9 @@
 import requests
 
 # Make an API call and check the responses
-url = "https://api.github.com/search/repositories?q=language:python+sort:stars+stars:>10000"
+url = "https://api.github.com/search/repositories"
+url += "?q=language:python+sort:stars+stars:>10000"
+
 headers = {
     "Accept": "application/json",              # JSON response
     "X-GitHub-Api-Version": "2026-03-10"      # Explicit API version
@@ -36,3 +38,7 @@ for repo_dict in repo_dicts:
     print(f'Created: {repo_dict['created_at']}')
     print(f'Updated: {repo_dict['updated_at']}')
     print(f'Description: {repo_dict['description']}\n')
+
+
+# To check/monitor API rate limits
+# enter https://api.github.com/rate_limit into a web browser.
