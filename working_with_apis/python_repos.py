@@ -24,7 +24,7 @@ print(f'Repositories Returned: {len(repo_dicts)}')
 
 repo_dict_1 = repo_dicts[0]
 print(f'\nKeys: {len(repo_dict_1)}')
-for key in repo_dict_1.keys():
+for key in sorted(list(repo_dict_1.keys())): # For a list omit the for loop
     print(key)
 
 print('\nSelected information about the first directory:')
