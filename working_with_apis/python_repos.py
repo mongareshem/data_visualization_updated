@@ -1,6 +1,6 @@
 import requests
 
-url = "https://api.github.com/search/repositories?q=language:python+sort:stars+stars:>10000"
+url = "https://api.github.com/search/repositories?q=language:python+sort:stars"
 headers = {
     "Accept": "application/json",              # JSON response
     "X-GitHub-Api-Version": "2026-03-10"      # Explicit API version
