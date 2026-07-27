@@ -2,6 +2,7 @@ from pathlib import Path
 import json
 
 import requests
+import plotly.express as px
 
 url = ("https://api.github.com/search/repositories"
        "?q=language:javascript+sort:stars+stars:>10000")
@@ -22,10 +23,17 @@ print(f'Number of Repos: {len(response_dict['items'])}')
 
 items = response_dict['items']
 
-for item in items[1:]:
+names, stars = [], []
+for item in items:
+       names.append(item['name'])
+       stars.append(item['stargazers_count'])
+
        print(f'\nName: {item['name']}')
        print(f'Stars: {item['stargazers_count']}')
        print(f'URL: {item['owner']['url']}')
        print(f'Created at: {item['created_at']}')
        print(f'Updated at: {item['updated_at']}')
        print(f'Description: {item['description']}')
+
+fig = px.bar(x=names, y=stars)
+fig.show()
