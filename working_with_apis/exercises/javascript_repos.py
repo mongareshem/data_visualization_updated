@@ -43,12 +43,27 @@ fig.update_layout(title={
        'x': 0.5,
        'font':{
               'family': 'Serif',
-              'size': 28,
+              'size': 32,
               'style': 'italic',
               'weight': 'bold',
               'color': 'black',
        }
 })
+
+fig.update_layout(xaxis_title={
+       'text': 'Repositories',
+       'font':{
+              'family':'Serif',
+              'color': 'blue',
+              'size': 25
+       },
+}, yaxis_title={
+       'text': 'Number of Stars',
+       'font':{
+              'family':'Serif',
+              'color': 'blue',
+              'size': 25,
+       }})
 
 fig.update_traces(marker_color='red', marker_opacity=0.8)
 
