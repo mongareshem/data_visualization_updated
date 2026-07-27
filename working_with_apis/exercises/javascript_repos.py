@@ -18,3 +18,14 @@ for key in response_dict.keys():
 
 print(f'\nTotal Count: {response_dict['total_count']}')
 print(f'Complete Results: {not response_dict['incomplete_results']}')
+print(f'Number of Repos: {len(response_dict['items'])}')
+
+items = response_dict['items']
+
+for item in items[1:]:
+       print(f'\nName: {item['name']}')
+       print(f'Stars: {item['stargazers_count']}')
+       print(f'URL: {item['owner']['url']}')
+       print(f'Created at: {item['created_at']}')
+       print(f'Updated at: {item['updated_at']}')
+       print(f'Description: {item['description']}')
