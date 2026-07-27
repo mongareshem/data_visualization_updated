@@ -14,7 +14,7 @@ submission_ids = r.json() # Returns a list
 # print(submission_ids)
 
 submission_dicts = []
-for submission_id in submission_ids[:20]:
+for submission_id in submission_ids[:10]:
     # Make a new API call for each submission
     url = f'https://hacker-news.firebaseio.com/v0/item/{submission_id}.json'
     r = requests.get(url)
@@ -41,12 +41,17 @@ for submission_dict in submission_dicts:
     print(f'Comments: {submission_dict['comments']}')
     print(f'Owner: {submission_dict['owner']}')
 
-comments, owners = [], []
+comments, owners, = [], []
 for submission_dict in submission_dicts:
     comments.append(int(submission_dict['comments']))
-    owners.append(submission_dict['owner'])
+    owners.append(f'<a href={submission_dict['hn_link']}>{submission_dict['owner']}</a>')
 
 print(comments)
 
-fig = px.bar(x=owners, y=comments)
+labels = {'x':'Owners', 'y': 'Comments'}
+title = 'Most active discussions currently on Hacker news'.title()
+fig = px.bar(x=owners, y=comments, labels=labels, title=title)
+
+fig.update_traces(marker_color='purple')
+
 fig.show()
