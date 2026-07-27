@@ -35,5 +35,21 @@ for item in items:
        print(f'Updated at: {item['updated_at']}')
        print(f'Description: {item['description']}')
 
-fig = px.bar(x=names, y=stars)
+labels = {'x':'Repo', 'y': 'stars'}
+fig = px.bar(x=names, y=stars, labels=labels)
+
+fig.update_layout(title={
+       'text': 'Most Starred JavaScript Repositories in GitHub',
+       'x': 0.5,
+       'font':{
+              'family': 'Serif',
+              'size': 28,
+              'style': 'italic',
+              'weight': 'bold',
+              'color': 'black',
+       }
+})
+
+fig.update_traces(marker_color='red', marker_opacity=0.8)
+
 fig.show()
